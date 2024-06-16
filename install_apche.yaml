@@ -1,0 +1,9 @@
+-
+ name: Installing the apache web server in linux hosts
+ hosts: SBI_app_servers
+ become: true
+ tasks: 
+   - name: install apache
+     yum:
+      name: httpd
+      state: prasent
